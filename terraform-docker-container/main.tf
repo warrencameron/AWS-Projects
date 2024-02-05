@@ -18,7 +18,7 @@ resource "docker_image" "nginx" {
 
 resource "docker_container" "nginx" {
   image = docker_image.nginx.image_id
-  name  = "Terraform_Docker_Tutorial2"
+  name  = "Terraform_Docker_Tutorial"
 
   ports {
     internal = 80
